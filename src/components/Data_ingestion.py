@@ -43,9 +43,8 @@ def main():
     data_dir_path = os.path.join(from_root(), "Data")
     os.makedirs(data_dir_path, exist_ok=True)
     data_file_path = os.path.join(data_dir_path, "raw_data.csv")
-
-
-    # Saving raw data
+    
+    #Saving raw data
     data_ingestion.save_data(df, data_file_path)
     logging.info("raw_data saved successfully")
 
